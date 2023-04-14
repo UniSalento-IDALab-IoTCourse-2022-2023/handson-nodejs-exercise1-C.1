@@ -46,3 +46,7 @@ app.post("/temperature", (req, res, next) => {
     run().catch(console.dir);
     res.sendStatus(200);
 });
+
+app.get('/dashboard', (req, res) => {
+    res.send('Hello World!');
+})
